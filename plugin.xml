@@ -16,7 +16,7 @@
 	<keywords>wp8 windows phone store trial review</keywords>
 	<license></license>
 	
-	<js-module src="www/wpstore.js" name="datetimepicker">
+	<js-module src="www/wpstore.js" name="wpstore">
 		<clobbers target="navigator.wpstore"/>
 	</js-module>
 	

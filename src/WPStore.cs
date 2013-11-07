@@ -35,7 +35,7 @@ namespace WPCordovaClassLib.Cordova.Commands
             var licenseInfo = new LicenseInformation();
             isTrial = licenseInfo.IsTrial();           
 #endif
-            DispatchCommandResult(new PluginResult(PluginResult.Status.OK, "{trial: " + isTrial.ToString().ToLower() + "}"));
+            DispatchCommandResult(new PluginResult(PluginResult.Status.OK, "{\"trial\": " + isTrial.ToString().ToLower() + "}"));
         }
    
     }

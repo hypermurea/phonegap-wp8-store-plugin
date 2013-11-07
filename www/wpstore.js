@@ -13,8 +13,7 @@
     store_export.isTrial = function (successCallback, errorCallback) {
 
         exec(function (res) {
-            console.log("" + res);
-            successCallback();
+            successCallback(res);
         }, errorCallback, "WPStore", "isTrial", "");
 
     };
