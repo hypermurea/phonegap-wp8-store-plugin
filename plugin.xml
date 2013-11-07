@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.hypermurea.phonegap.wp8-store-plugin"
+    version="0.0.1">
+
+	<engines>
+		<engine name="cordova" version=">=3.0.0"/>
+	</engines>
+	
+	<name>WP8 Plugin for Windows Store features</name>
+	
+	<description>Reviewing apps, opening windows store links and checking for trial version</description>
+	<author>Jaakko Santala</author>
+	
+	<keywords>wp8 windows phone store trial review</keywords>
+	<license></license>
+	
+	<js-module src="www/wpstore.js" name="datetimepicker">
+		<clobbers target="navigator.wpstore"/>
+	</js-module>
+	
+	<platform name="wp8">
+		<config-file target="config.xml" parent="/*">
+            <feature name="WPStore">
+                <param name="wp-package" value="WPStore"/>
+            </feature>
+        </config-file>
+		
+		<source-file src="src/WPStore.cs"/>
+	</platform>
+	
+
+	
+</plugin>
